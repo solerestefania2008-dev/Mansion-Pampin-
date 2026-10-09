@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mansión Pampín - Juego 2D</title>
+  <link rel="icon" type="image/png" href="imagenes/MARYFER.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="top">
+    <img src="imagenes/titulo.png" class="logo" alt="Mansión Pampín">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Quiénes somos</a>
+      <a href="download.html">Descargar</a>
+      <a href="gallery.html">Imágenes</a>
+      <a href="report.html">Errores</a>
+    </nav>
+  </header>
+
+  <!-- PORTADA -->
+  <section id="home" class="home">
+    <div class="overlay">
+      <h1>Mansión Pampín</h1>
+      <p>Corrientes tiene secretos. Esta mansión los recuerda.</p>
+      <a href="#about" class="arrow" aria-label="Desplazarse hacia abajo">⬇</a>
+    </div>
+  </section>
+
+  <!-- DESCRIPCIÓN GENERAL -->
+  <section id="about" class="section des">
+    <h2>Un viaje por el patrimonio e historia de Corrientes</h2>
+    <p>
+      Mansión Pampín es un videojuego de plataformas 2D en Pixel Art desarrollado en Godot Engine por estudiantes de la Escuela Técnica Carmen Molina de Llano.
+      Revive la histórica leyenda urbana correntina de 1922 inspirada en la tragedia de la familia Pampín y la emblemática casona de la calle 25 de Mayo.
+    </p>
+    <a href="download.html" class="btn">DESCARGAR DEMO</a>
+  </section>
+
+  <!-- SECCIÓN NIVELES -->
+  <section class="page">
+    <h2 style="text-align: center; color: #60a5fa; font-size: 32px; margin-bottom: 10px;">Estructura de los Niveles</h2>
+    <p style="text-align: center; color: #ccc; max-width: 700px; margin: 0 auto 40px;">
+      <strong>Mecánica central:</strong> Todos los niveles comienzan desde el interior de la casa central, la cual actúa como punto de partida interactivo hacia cada escenario histórico.
+    </p>
+
+    <div class="block">
+      <img src="assets/nivel1.png" alt="Plaza 25 de Mayo">
+      <div class="text">
+        <h2>Nivel 1 – Plaza 25 de Mayo e Iglesia La Merced</h2>
+        <p>
+          Partiendo desde la casa, el jugador viaja a la emblemática Plaza 25 de Mayo. El objetivo es recolectar flores dispersas para armar un ramo mientras aprende los movimientos básicos del personaje. El nivel culmina en la Iglesia de La Merced, recordando el momento histórico de la boda de Ana María Meabe y Fernando Pampín.
+        </p>
+      </div>
+    </div>
+
+    <div class="block">
+      <img src="imagenes/cocina pampin.png" alt="Quinta de los Pampín">
+      <div class="text">
+        <h2>Nivel 2 – Quinta de los Pampín</h2>
+        <p>
+          Desde la casa, el jugador se desplaza hasta la Quinta familiar. En este escenario deberá encontrar las llaves ocultas para abrir el portón de entrada —haciendo alusión a la leyenda de la equivocación del llavero en la noche de bodas—, resolviendo desafíos de exploración e interacción.
+        </p>
+      </div>
+    </div>
+
+    <div class="block">
+      <img src="imagenes/pampinpixel.png" alt="El Barco y el Cementerio">
+      <div class="text">
+        <h2>Nivel 3 – El Barco y el Cementerio San Juan Bautista</h2>
+        <p>
+          El nivel final comienza nuevamente en la casa y traslada la acción al trágico viaje en el barco (el vapor <em>Villa Franca</em>). El jugador deberá superar obstáculos en la embarcación durante el incidente y culminar el recorrido en el icónico panteón del Cementerio San Juan Bautista, donde descansa la memoria de la familia Pampín.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

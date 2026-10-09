@@ -1,0 +1,375 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+/* CABECERA Y NAVEGACIÓN */
+.top {
+  background: #0d095e;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+/* ==== HOME PAGE ==== */
+.home {
+  min-height: 100vh;
+  background-image: url("imagenes/portada.png");
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.55); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.overlay h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+/* Botón flecha scroll */
+.arrow {
+  display: inline-block;      
+  padding: 10px 18px;          
+  background-color: rgba(0, 0, 0, 0.4); 
+  color: white;                
+  border-radius: 10px;         
+  text-decoration: none;      
+  font-size: 2rem;             
+  transition: background-color 0.3s, transform 0.3s; 
+  margin-top: 20px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7); 
+  transform: translateY(4px);           
+}
+
+/* SECCIÓN DESCRIPCIÓN */
+.section.des {
+  min-height: 60vh;         
+  padding: 80px 20px;       
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;      
+  text-align: center;
+}
+
+.section.des h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.section.des p {
+  font-size: 18px;
+  max-width: 600px; /* Corregido: se agregó px */
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.section.des .btn {
+  display: inline-block;   
+  width: auto;
+  background: #2563eb;    
+  color: white;
+  font-size: 16px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.section.des .btn:hover {
+  background: #1d4ed8;
+}
+
+/* SECCIÓN DE NIVELES */
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.block {
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.block img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.block .text h2 {
+  margin-top: 0;
+  color: #60a5fa;
+  font-size: 28px;
+}
+
+.block .text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* ==== QUIÉNES SOMOS ==== */
+.about-page {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.about-page .page {
+  padding: 80px 20px;
+}
+
+.about-page h2 {
+  color: #60a5fa;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.about-page p.intro {
+  text-align: center;
+  font-size: 18px;
+  color: #94a3b8;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+/* ==== GALERÍA DE IMÁGENES ==== */
+.gallery-page {
+  background: #0f172a;
+}
+
+.gallery-section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #60a5fa;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #3b82f6;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* ==== DESCARGAR PAGE ==== */
+.download-page {
+  background: linear-gradient(#0b132b, #1c2541);
+  color: white;
+}
+
+.download-hero {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.download-hero h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.download-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: #1d4ed8;
+}
+
+/* CONTROLES */
+.controls {
+  background: #111827;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.controls h2 {
+  color: #93c5fd;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.controls-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.control-card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 450px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.control-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* DONAR */
+.donate {
+  padding: 60px 20px;
+  text-align: center;
+  background: #020617;
+}
+
+.donate h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.donate p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 25px;
+}
+
+.donate-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #1e40af;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.donate-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ERRORES */
+.report-page {
+  background: #0d2640;
+}
+
+.report {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.report h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.report p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #cbd5e1;
+}
+
+.report-link {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .block {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .block img {
+    width: 100%;
+    height: auto;
+  }
+}
